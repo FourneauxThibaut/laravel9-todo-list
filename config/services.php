@@ -14,6 +14,18 @@ return [
     |
     */
 
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => 'http://example.com/callback-url',
+    ],
+
+    'google' => [
+        'client_id' => 'xxxx',
+        'client_secret' => 'xxx',
+        'redirect' => 'http://127.0.0.1:8000/callback/google',
+    ], 
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
